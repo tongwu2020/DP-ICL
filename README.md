@@ -33,4 +33,4 @@ url={https://openreview.net/forum?id=x4OPJ7lHVU}
 
 ## Question
 
-Please Send an email to [Tong Wu](tongwu@princeton.edu) for any questions.
+Please Send an email to Tong Wu (tongwu@princeton.edu) for any questions.
