@@ -30,3 +30,7 @@ year={2024},
 url={https://openreview.net/forum?id=x4OPJ7lHVU}
 }
 ```
+
+## Question
+
+Please Send an email to [Tong Wu](tongwu@princeton.edu) for any questions.
