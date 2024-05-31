@@ -32,5 +32,6 @@ url={https://openreview.net/forum?id=x4OPJ7lHVU}
 ```
 
 ## Question
+Please add an issue if you have questions about the code.
+Please send an email to Tong Wu (tongwu@princeton.edu) for any questions related to paper.
 
-Please Send an email to Tong Wu (tongwu@princeton.edu) for any questions.
