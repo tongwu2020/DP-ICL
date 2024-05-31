@@ -1,7 +1,5 @@
 
-# Generate separate predictions for multiple choice tasks
-
-Check two folders for long generation and multiple choice tasks. 
+# Generate separate predictions for long-form generation tasks
 
 ## Setup
 Run `pip install openicl`
