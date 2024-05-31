@@ -1,0 +1,16 @@
+task: amazon
+processor_kwargs:
+  mode: labeled
+shots:
+- 4
+seed: 42
+strategy: pate 
+basedir: ./outputs
+model_kwargs:
+  calibrate: False
+model: gpt2
+model_name: gpt2-medium
+output_dir: ./outputs/baseline-gpt2-amazon-multi
+
+### subsampling 
+ensemble: 10

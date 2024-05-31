@@ -1,0 +1,17 @@
+task: amazon
+processor_kwargs:
+  mode: "labeled-gpt3"
+shots:
+- 4                                                                          
+seed: 42
+strategy: pate
+basedir: ./outputs
+model: gpt3
+model_name: ada
+model_kwargs:
+  api_key_file: ./openai_api_key
+output_dir: ./outputs/baseline-gpt3ada-amazon-multi
+runs: 5
+
+### subsampling 
+ensemble: 10

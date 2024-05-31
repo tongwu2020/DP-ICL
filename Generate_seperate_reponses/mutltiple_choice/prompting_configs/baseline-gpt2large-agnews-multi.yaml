@@ -1,0 +1,16 @@
+task: agnews
+processor_kwargs:
+  mode: labeled
+shots:
+- 4
+seed: 42
+strategy: pate 
+basedir: ./outputs
+model_kwargs:
+  calibrate: False
+model: gpt2
+model_name: gpt2-large
+output_dir: ./outputs/baseline-gpt2large-agnews-multi
+
+### subsampling 
+ensemble: 10
