@@ -268,40 +268,6 @@ class PAGenInferencer(BaseInferencer):
         return all_embedding
 
 
-    def predict_next_token(self, entry, force_words=None):
-        print(self.model.config)
-        kk = kk 
-        tokenized_data = self.tokenizer.batch_encode_plus(entry, padding=True, return_tensors='pt').to(
-            self.device)
-        prompt_len = int(tokenized_data.attention_mask.shape[1])
-        if 't5' in self.model_name:
-            prompt_len = 0
-        if force_words is not None:
-            force_words_ids = [
-                self.tokenizer(force_words).input_ids,
-            ]
-            outputs = self.model.generate(input_ids=tokenized_data.input_ids,
-                                        force_words_ids=force_words_ids,
-                                        num_beams=10,
-                                        attention_mask=tokenized_data.attention_mask,
-                                        eos_token_id=self.tokenizer.eos_token_id,
-                                        pad_token_id=self.tokenizer.pad_token_id,
-                                        **self.generation_kwargs)
-        else:
-            time_begin = time.time()
-            outputs = self.model.generate(input_ids=tokenized_data.input_ids,
-                                        attention_mask=tokenized_data.attention_mask,
-                                        eos_token_id=self.tokenizer.eos_token_id,
-                                        pad_token_id=self.tokenizer.pad_token_id,
-                                        max_new_tokens = 1)  
-            time_end = time.time()
-            print("time", time_end - time_begin, "s")
-
-        outputs = outputs.tolist()
-        complete_output = self.tokenizer.batch_decode(outputs[:], skip_special_tokens=True)
-        generated = self.tokenizer.batch_decode([output[prompt_len:] for output in outputs],
-                                                                    skip_special_tokens=True)
-        return generated
 
 
 def DP_select(next_token_list):
