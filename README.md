@@ -9,7 +9,7 @@ In-context learning (ICL) is an important capability of Large Language Models (L
 
 
 
-### Please check the Jupyter Notebook
+### Please check the Google Colab 
 
 Important Note: Due to OpenAI's deprecation of the model previously utilized in our experiments, direct replication of some results may no longer be feasible. Nonetheless, we have archived the individual predictions, which are accessible for experiments with varying privacy parameters.
 
