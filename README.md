@@ -9,7 +9,7 @@ In-context learning (ICL) is an important capability of Large Language Models (L
 
 
 
-### Please check the jupyter Notebook
+### Please check the Jupyter Notebook
 
 Important Note: Due to OpenAI's deprecation of the model previously utilized in our experiments, direct replication of some results may no longer be feasible. Nonetheless, we have archived the individual predictions, which are accessible for experiments with varying privacy parameters.
 
@@ -32,5 +32,7 @@ url={https://openreview.net/forum?id=x4OPJ7lHVU}
 ```
 
 ## Question
+Please add an issue if you have questions about the code.
 
-Please Send an email to Tong Wu (tongwu@princeton.edu) for any questions.
+Please email Tong Wu (tongwu@princeton.edu) for any questions related to the paper.
+
